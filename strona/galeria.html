@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="utf-8">
+    <title>Doświadczać Natury</title>
+    <meta content="Doświadczać Natury" name="description">
+    <meta content="Konrad Szmidt" name="author">
+    <link href="css/style.css" rel="stylesheet">
+    <link href=
+    'https://fonts.googleapis.com/css?family=Poiret+One&subset=latin,latin-ext'
+    rel='stylesheet' type='text/css'>
+    <link href=
+    'https://fonts.googleapis.com/css?family=Lato:400,300,700&subset=latin,latin-ext'
+    rel='stylesheet' type='text/css'>
+</head>
+<body>
+    <div id="sticker">
+        <a href="../mazury/index.html"><img src="img/sticker.png"></a>
+    </div>
+    <div id="nav-container">
+        <nav>
+            <ul>
+                <li>
+                    <a href="index.html">Home</a>
+                </li>
+                <li class="active">
+                    <a href="galeria.html">Galeria</a>
+                </li>
+                <li>
+                    <a href="baza.html">Baza turystyczna</a>
+                </li>
+                <li>
+                    <a href="szlaki.html">Szlaki i ciekawe miejsca</a>
+                </li>
+            </ul>
+        </nav>
+    </div>
+    <div class="main-title">
+        <span>Doświadczać Natury</span>
+        <h1>Bieszczady</h1>
+    </div>
+    <div class="bg-body">
+        <div id="main-container">
+            <div class="box">
+                <span>Galeria:</span>
+                <div id="1" onclick="lato('lato')">
+                    <a class="myButton">LATO</a>
+                </div>
+                <div id="2" onclick="zima('zima')">
+                    <a class="myButton">ZIMA</a>
+                </div>
+                <div align="center" class="gallery" id="lato">
+                    <h3>Bieszczady Latem</h3>
+                    <div class="thumbnails"><img alt="" id="img1" name="img1"
+                    onmouseover="preview.src=img1.src" src="img/1/img1.jpg">
+                    <img alt="" id="img2" name="img2" onmouseover=
+                    "preview.src=img2.src" src="img/1/img2.jpg"> <img alt=""
+                    id="img3" name="img3" onmouseover="preview.src=img3.src"
+                    src="img/1/img3.jpg"> <img alt="" id="img4" name="img4"
+                    onmouseover="preview.src=img4.src" src=
+                    "img/1/img4.jpg"></div><br>
+                    <div align="center" class="preview"><img alt="" id=
+                    "preview" name="preview" src="img/1/img1.jpg"></div>
+                </div>
+                <div align="center" class="gallery" id="zima" style=
+                "display:none">
+                    <h3>Bieszczady Zimą</h3>
+                    <div class="thumbnails"><img alt="" id="img5" name="img5"
+                    onmouseover="preview2.src=img5.src" src="img/2/img1.jpg">
+                    <img alt="" id="img6" name="img6" onmouseover=
+                    "preview2.src=img6.src" src="img/2/img2.jpg"> <img alt=""
+                    id="img7" name="img7" onmouseover="preview2.src=img7.src"
+                    src="img/2/img3.jpg"> <img alt="" id="img8" name="img8"
+                    onmouseover="preview2.src=img8.src" src=
+                    "img/2/img4.jpg"></div><br>
+                    <div align="center" class="preview"><img alt="" id=
+                    "preview2" name="preview2" src="img/2/img1.jpg"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer>
+        (c) Konrad Szmidt 2015
+    </footer>
+    <script>
+    function zima(target) {
+    document.getElementById(target).style.display = 'block';
+    document.getElementById("lato").style.display = 'none';
+    }
+    function lato(target) {
+    document.getElementById(target).style.display = 'block';
+    document.getElementById("zima").style.display = 'none';
+    }
+    </script>
+</body>
+</html>
